@@ -18,6 +18,8 @@ import About from '../views/About'
 import Contact from '../views/Contact'
 
 import avatar from '../images/avatar.jpg'
+import pin from '../images/pin.jpg'
+import tablet from '../images/tablet.jpg'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -62,41 +64,39 @@ const Index = () => (
     <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
-        <BigTitle>
-          Hello, <br /> I'm John Doe.
-        </BigTitle>
-        <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+        <BigTitle>AppOwl</BigTitle>
+        <Subtitle>A simple way to monitor devices in the classroom</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Features</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
+            title="Monitor"
             link="https://www.behance.net/gallery/58937147/Freiheit"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective contest.
+            Know when students exit the app when they're not suppose to.
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
+            title="Rewards"
             link="https://www.behance.net/gallery/52915793/Harry-Potter"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
+            Give students stars and other cool icons when they behave.
           </ProjectCard>
           <ProjectCard
-            title="Tomb Raider"
+            title="Messaging"
             link="https://www.behance.net/gallery/43907099/Tomb-Raider"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
+            Send direct notification messages to any and all devices.
           </ProjectCard>
           <ProjectCard
-            title="Eagle"
+            title="Fun Time"
             link="https://www.behance.net/gallery/38068151/Eagle"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            A fantasy image manipulation relocating the habitat of wild animals.
+            Incentivize behavior with fun web app experiences at times.
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -105,31 +105,65 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            AppOwl is on a mission to turn student devices into tools rather than distractions in the classroom.
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
+          The web has so many learning resources and at the moment, classrooms are barely tapping into them to enrich
+          their education experiences. AppOwl will bridge this divide between students and the internet, and provide
+          ways for teachers to bring the web into their classrooms in a safe and orderly manner.
+        </AboutDesc>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Title>Privacy Policy</Title>
+        <AboutHero>
+          <Avatar src={pin} alt="A map pin" />
+          <AboutSub>Location Access</AboutSub>
+        </AboutHero>
+        <AboutDesc>
+          AppOwl requires access to device location only for the purpose of measuring whether teacher devices are being
+          used on school grounds if they have access to premium features purchased by the school.
+        </AboutDesc>
+        <AboutHero>
+          <Avatar src={tablet} alt="A tablet icon" />
+          <AboutSub>Phone State</AboutSub>
+        </AboutHero>
+        <AboutDesc>
+          AppOwl watches the device state in order to notify the teacher's monitor at exact moments when students exit
+          the applicaiton. This provides real-time monitoring functionalities for the teacher.
         </AboutDesc>
       </About>
       <Contact offset={4}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:andy@appowl.awsapps.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://twitter.com/rhymeswithandy">Twitter</a> &{' '}
+            <a href="https://www.instagram.com/andyzanli/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
+          &copy; 2019 by AppOwl. <a href="https://www.friendly-robot.netlify.com">Friendly-Robot</a>.
         </Footer>
       </Contact>
     </Parallax>
